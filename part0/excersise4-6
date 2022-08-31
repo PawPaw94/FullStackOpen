@@ -1,0 +1,29 @@
+title 0.4 excersise
+
+Browser->Server: User fills and submits form input via "submit" button.
+Browser->Server: Browser sends the data with HTTP POST to the address "/new_note" over to the server as a "note". 
+note over Server: Server pushes new note into notes array as an object with body of content and date. 
+Server->Browser: Server redirects the user to the "/notes" page.
+Browser->Server: Requests the css,js and json data files. 
+Server->Browser: CSS, JS and JSON file gets sent over to the browser which render the new information.
+
+
+title Excersise 0.5
+
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa
+Server->Browser: HTML code
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+Server->Browser: CSS code
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+Server->Browser: spa.js code
+note left of Browser: JS code makes a Request of Json data from server
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+Server->Browser: Notes array as objects with a body of content and date which are listed as UL and LI.
+note over Browser: renders the notes list to display. 
+
+title Excersise 0.6
+
+note over Browser: User fills and submits form input via "submit" button.
+note over Browser: JS code prevents re-rendering of the website after form submit. Creates and adds new note to the note list. Rerenders the note list on the page.
+Browser->Server: New note is sent as data with a POST request as JSON data with a body of content and date.
+note over Server: Saves the updated list. 
