@@ -50,14 +50,7 @@ const App = () => {
   ? persons
   : persons.filter(person => 
       person.name.toLowerCase().includes(searchPerson.toLowerCase()))
-
-
-
-      // <ul>
-      //   {personsToShow.map(person =>
-      //     <Person key={person.id} person={person} />)}
-
-      // </ul>
+      
   return (
     <div>
       <h2>Phonebook</h2>
